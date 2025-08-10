@@ -1,0 +1,42 @@
+name: "Go Mod Tidy and Auto Push"
+
+on:
+  # 允许手动从 GitHub Actions UI 触发此工作流
+  workflow_dispatch:
+  # 也可以根据需要添加其他触发器，例如 push
+  push:
+
+jobs:
+  # 为 'app' 模块运行 go mod tidy 并推送更改
+  tidy_app_module:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code # 检出代码
+        uses: actions/checkout@v4
+        with:
+          # 需要 token 以便能够推送更改
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Go # 设置 Go 环境
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22' # 根据需要调整 Go 版本
+
+      - name: Run go mod tidy for app # 为 'app' 模块运行 go mod tidy
+        working-directory: ./tests # 在 'app' 目录下执行命令
+        run: go mod tidy
+
+      - name: Commit and push changes for app # 提交并推送 'app' 模块的更改
+        working-directory: ./tests # 在 'app' 目录下执行命令
+        run: |
+          # 检查是否有更改
+          if git diff --exit-code go.mod go.sum; then
+            echo "No changes in app/go.mod or app/go.sum. Skipping commit."
+          else
+            echo "Changes detected in app/go.mod or app/go.sum. Committing and pushing."
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add go.mod go.sum
+            git commit -m "Auto: go mod tidy for app module"
+            git push
+          fi
