@@ -1,4 +1,4 @@
-# Protean (Charm)
+# Protean for XLESS
 
 Protean is a fork of the uTLS library, designed to provide a robust and extensible framework for creating TLS camouflage connections.
 
