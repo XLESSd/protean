@@ -3,7 +3,7 @@ module github.com/ban6cat6/protean/protean_test
 go 1.24.3
 
 require (
-	github.com/ban6cat6/protean v0.0.0-00010101000000-000000000000
+	github.com/XLESSd/protean v0.0.0
 	github.com/stretchr/testify v1.10.0
 	github.com/valyala/fasthttp v1.63.0
 	go.uber.org/goleak v1.3.0
