@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ban6cat6/protean/internal/fips140tls"
+	"github.com/XLESSd/protean/internal/fips140tls"
 )
 
 func testClientHello(t *testing.T, serverConfig *Config, m handshakeMessage) {

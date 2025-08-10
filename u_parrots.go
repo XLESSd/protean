@@ -18,7 +18,7 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/ban6cat6/protean/dicttls"
+	"github.com/XLESSd/protean/dicttls"
 )
 
 var ErrUnknownClientHelloID = errors.New("tls: unknown ClientHelloID")

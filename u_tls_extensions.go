@@ -11,7 +11,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/ban6cat6/protean/dicttls"
+	"github.com/XLESSd/protean/dicttls"
 	"golang.org/x/crypto/cryptobyte"
 )
 

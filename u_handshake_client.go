@@ -13,9 +13,9 @@ import (
 	"io"
 
 	"github.com/andybalholm/brotli"
-	"github.com/ban6cat6/protean/internal/fips140tls"
-	"github.com/ban6cat6/protean/internal/hpke"
-	"github.com/ban6cat6/protean/internal/tls13"
+	"github.com/XLESSd/protean/internal/fips140tls"
+	"github.com/XLESSd/protean/internal/hpke"
+	"github.com/XLESSd/protean/internal/tls13"
 	"github.com/klauspost/compress/zstd"
 )
 

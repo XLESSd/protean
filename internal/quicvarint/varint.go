@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ban6cat6/protean/internal/quicvarint/protocol"
+	"github.com/XLESSd/protean/internal/quicvarint/protocol"
 )
 
 // taken from the QUIC draft

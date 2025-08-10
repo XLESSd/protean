@@ -11,7 +11,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/ban6cat6/protean/internal/hpke"
+	"github.com/XLESSd/protean/internal/hpke"
 
 	"golang.org/x/crypto/cryptobyte"
 )

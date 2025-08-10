@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ban6cat6/protean/hmqv"
+	"github.com/XLESSd/protean/hmqv"
 	"github.com/cloudflare/circl/dh/x25519"
 )
 

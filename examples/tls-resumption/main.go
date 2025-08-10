@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	tls "github.com/ban6cat6/protean"
+	tls "github.com/XLESSd/protean"
 )
 
 type ClientSessionCache struct {
