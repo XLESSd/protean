@@ -1,0 +1,8 @@
+version: 2
+updates:
+  # 更新 /app 目录下的 Go 模块依赖
+  - package-ecosystem: "gomod"
+    directory: "/tests"
+    schedule:
+      interval: "daily"
+    target-branch: "renamed" # 目标分支
