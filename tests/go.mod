@@ -24,4 +24,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/XLESSd/protean => ../
+replace github.com/ban6cat6/protean => ../
