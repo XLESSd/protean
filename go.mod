@@ -1,4 +1,4 @@
-module github.com/ban6cat6/protean
+module github.com/XLESSd/protean
 
 go 1.24
 
